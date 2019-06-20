@@ -33,14 +33,14 @@ title: Массовый перевод
 
 ## Примеры готовых файлов
 
-<pre>
+<pre class='bg-grey-lt-000'>
 PP	email	mail1@mail.com	S	100	USD	payer
 PP	email	mail2@mail.com	S	100	USD	payee
 PP	email	mail3@mail.com	R	100	USD	payer
 PX	email	mail4@mail.com	S	120	USD
 PX	email	mail5@mail.com	R	120	USD
-WM	wallet	Z0000000000	R	130	USD	Affiliate comission payout
-WM	wallet	Z0000000001	S	99.99	USD	Payment for traffic
+WM	wallet	Z000000000000	R	130	USD	Affiliate commission payout
+WM	wallet	Z000000000001	S	99.99	USD	Payment for traffic
 EPM	wallet	000-000000	R	140	USD
 EPM	email	mail6@mail.com	R	150	USD
 </pre>
@@ -54,14 +54,14 @@ EPM	email	mail6@mail.com	R	150	USD
 [Кто оплачивает сборы PayPal] - обязательный параметр, payer или payee , сборы PayPal оплачивает отправитель или получатель соответственно.
 
 **Пример:**
-<pre>PP	email	mail@mail.com	S	100	USD	payer</pre>
+<pre class='bg-grey-lt-000'>PP	email	mail@mail.com	S	100	USD	payer</pre>
 
 ## Paxum (код: PX)
 
 [Код платёжной системы] [Тип получателя] [Получатель] [Тип суммы] [Сумма] [Валюта]
 
 **Пример:**
-<pre>PX	email	mail@mail.com	S	100	USD</pre>
+<pre class='bg-grey-lt-000'>PX	email	mail@mail.com	S	100	USD</pre>
 
 ## Webmoney (код: WM)
 
@@ -90,7 +90,7 @@ EPM	email	mail6@mail.com	R	150	USD
 
 **Пример:**
 
-<pre>WM	wallet	Z000000000000	S	99.99	USD	за рекламу</pre>
+<pre class='bg-grey-lt-000'>WM	wallet	Z000000000000	S	99.99	USD	за рекламу</pre>
 
 ## ePayments (код: EPM)
 
@@ -102,7 +102,7 @@ EPM	email	mail6@mail.com	R	150	USD
 
 **Примеры:**
 
-<pre>
+<pre class='bg-grey-lt-000'>
 EPM	wallet	000-000000	R	100	USD
 EPM	email	mail@mail.com	R	100	USD
 EPM	phone	+70000000000	R	100	USD
@@ -113,7 +113,8 @@ EPM	phone	+70000000000	R	100	USD
 [Код платёжной системы] [Тип получателя] [Получатель] [Тип суммы] [Сумма] [Валюта] [Примечание к платежу] - обязательный параметр, один из вариантов
 
 **Примеры:**
-<pre>
+
+<pre class='bg-grey-lt-000'>
 CAP	wallet	U0000000	R	100	USD
 CAP	wallet	U0000000	R	100	USD	Test
 </pre>

@@ -118,3 +118,16 @@ EPM	phone	+70000000000	R	100	USD
 CAP	wallet	U0000000	R	100	USD
 CAP	wallet	U0000000	R	100	USD	Test
 </pre>
+
+## Украинские банки (код: UAH)
+
+[Код платёжной системы] [Тип получателя] [Получатель] [Тип суммы] [Сумма] [Валюта]
+
+**Примеры:**
+
+<pre class='bg-grey-lt-000'>
+UAH	visa	4149439001200000	R	1000	UAH
+UAH	mastercard	5168755629600000	R	1100	UAH
+UAH	visa	4149439001200000	S	50	USD
+UAH	mastercard	4149439001200000	S	60	USD
+</pre>

@@ -45,13 +45,18 @@ EPM	wallet	000-000000	R	140	USD
 EPM	email	mail6@mail.com	R	150	USD
 </pre>
 
+## Использование Excel
+
+Очень удобно готовить данные для импорта в таблицах (Excel / Google Docs) и затем копировать их в окно импорта.
+Скачать пример файла с заготовкой платежей.
+
 ## PayPal (код: PP)
 
 [Код платёжной системы] [Тип получателя] [Получатель] [Тип суммы] [Сумма] [Валюта] [Кто оплачивает сборы PayPal]
 
 **Возможные значения индивидуальных параметров:**
 
-[Кто оплачивает сборы PayPal] - обязательный параметр, payer или payee , сборы PayPal оплачивает отправитель или получатель соответственно.
+[Кто оплачивает сборы PayPal] - обязательный параметр, payer или payee , сборы PayPal оплачивает отправитель или получатель соответственно. **Внимание!** для использования типа получателя payee требуется особое разрешение, которое можно получить через службу поддержки.
 
 **Пример:**
 <pre class='bg-grey-lt-000'>PP	email	mail@mail.com	S	100	USD	payer</pre>
@@ -70,27 +75,19 @@ EPM	email	mail6@mail.com	R	150	USD
 **Возможные значения индивидуальных параметров:**
 
 [Примечание к платежу] - обязательный параметр, один из вариантов:
-- за рекламу
-- партнерские отчисления
-- оплата за траффик
-- платеж за разработку модуля
-- за дизайн
-- оплата за хостинг
-- платеж за сервера
-- оплата за продвижение
-- Affiliate comission payout
-- Payment for traffic
-- Payment for advertising services
-- Payment for IT services
-- Payment for design
-- Payment for freelance service
-- Payment for server
-- Payment for hosting
-- Payment for partner
+- affiliate commission payout
+- payment for advertising services
+- payment for design
+- payment for it services
+- payment for freelance service
+- payment for hosting
+- payment for promotion
+- payment for servers
+- payment for traffic
 
 **Пример:**
 
-<pre class='bg-grey-lt-000'>WM	wallet	Z000000000000	S	99.99	USD	за рекламу</pre>
+<pre class='bg-grey-lt-000'>WM	wallet	Z000000000000	S	99.99	USD	payment for traffic</pre>
 
 ## ePayments (код: EPM)
 
@@ -119,6 +116,28 @@ CAP	wallet	U0000000	R	100	USD
 CAP	wallet	U0000000	R	100	USD	Test
 </pre>
 
+## Advanced Cash (код: ADV)
+
+[Код платёжной системы] [Тип получателя] [Получатель] [Тип суммы] [Сумма] [Валюта]
+
+**Примеры:**
+
+<pre class='bg-grey-lt-000'>
+ADV	wallet	U863070000000	R	210	USD
+ADV	email	email@email.com	S	220	USD
+</pre>
+
+## Perfect Money (код: PM)
+
+[Код платёжной системы] [Тип получателя] [Получатель] [Тип суммы] [Сумма] [Валюта]
+
+**Примеры:**
+
+<pre class='bg-grey-lt-000'>
+PM	wallet	U00000000	R	100	USD
+PM	wallet	U00000000	S	150	USD
+</pre>
+
 ## Украинские банки (код: UAH)
 
 [Код платёжной системы] [Тип получателя] [Получатель] [Тип суммы] [Сумма] [Валюта]
@@ -130,4 +149,48 @@ UAH	visa	4149439001200000	R	1000	UAH
 UAH	mastercard	5168755629600000	R	1100	UAH
 UAH	visa	4149439001200000	S	50	USD
 UAH	mastercard	4149439001200000	S	60	USD
+</pre>
+
+## Российские банки Mastercard/VISA (код: RUB)
+
+[Код платёжной системы] [Тип получателя] [Получатель] [Тип суммы] [Сумма] [Валюта]
+
+**Примеры:**
+
+<pre class='bg-grey-lt-000'>
+RUB 	mastercard	5168755629600000	R	10000	RUB
+RUB 	visa	4149439001200000	S	150	USD
+</pre>
+
+## Российские банки Maestro/MIR (код: RUB2)
+
+[Код платёжной системы] [Тип получателя] [Получатель] [Тип суммы] [Сумма] [Валюта] [ФИО получателя]
+
+**Примеры:**
+
+<pre class='bg-grey-lt-000'>
+RUB2	maestro	639002029000000000	S	150	USD	Иванов Иван Иванович
+RUB2	mir	2200020200000000	R	10000	RUB	Иванов Иван Иванович
+</pre>
+
+## Яндекс Деньги (код: YAD)
+
+[Код платёжной системы] [Тип получателя] [Получатель] [Тип суммы] [Сумма] [Валюта]
+
+**Примеры:**
+
+<pre class='bg-grey-lt-000'>
+YAD	wallet	41000000000000	R	10000	RUB
+YAD	wallet	41000000000000	S	150	USD
+</pre>
+
+## QIWI (код: QIWI)
+
+[Код платёжной системы] [Тип получателя] [Получатель] [Тип суммы] [Сумма] [Валюта]
+
+**Примеры:**
+
+<pre class='bg-grey-lt-000'>
+QIWI 	wallet	+00000000000	R	10000	RUB
+QIWI 	wallet	+00000000000	S	150	USD
 </pre>
